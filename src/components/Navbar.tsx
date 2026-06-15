@@ -2,11 +2,12 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Menu, X, Volume2 } from "lucide-react";
+import { Menu, X, Volume2, VolumeX } from "lucide-react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,17 +55,29 @@ export default function Navbar() {
               Contacto
             </a>
             
-            {/* Live Indicator */}
-            <a href="#streaming" className="flex items-center gap-2 bg-[#5416B4]/30 px-4 py-2 rounded-full border border-[#5416B4] hover:bg-accent/20 transition-all group">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
-              </span>
-              <span className="text-xs font-bold text-white tracking-wider drop-shadow-md flex items-center gap-1.5">
-                EN VIVO
-                <Volume2 className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
-              </span>
-            </a>
+            {/* Live Indicator & Mute */}
+            <div className="flex items-center gap-3">
+              <a href="#streaming" className="flex items-center gap-2 bg-[#5416B4]/30 px-4 py-2 rounded-full border border-[#5416B4] hover:bg-accent/20 transition-all group">
+                <span className="relative flex h-3 w-3">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+                </span>
+                <span className="text-xs font-bold text-white tracking-wider drop-shadow-md">
+                  EN VIVO
+                </span>
+              </a>
+              <button 
+                onClick={() => setIsMuted(!isMuted)}
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-[#5416B4]/30 border border-[#5416B4] hover:bg-accent/20 transition-all group focus:outline-none"
+                aria-label={isMuted ? "Activar sonido" : "Silenciar"}
+              >
+                {isMuted ? (
+                  <VolumeX className="w-4 h-4 text-white group-hover:text-accent transition-colors" />
+                ) : (
+                  <Volume2 className="w-4 h-4 text-white group-hover:text-accent transition-colors" />
+                )}
+              </button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -97,16 +110,27 @@ export default function Navbar() {
             >
               Contacto
             </a>
-            <a href="#streaming" onClick={() => setMobileMenuOpen(false)} className="mt-4 flex items-center justify-center gap-2 bg-[#5416B4]/30 px-6 py-3 rounded-full border border-[#5416B4] w-max hover:bg-accent/20 transition-colors">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
-              </span>
-              <span className="text-sm font-bold text-white tracking-wider flex items-center gap-1.5">
-                EN VIVO
-                <Volume2 className="w-4 h-4 text-accent" />
-              </span>
-            </a>
+            <div className="mt-4 flex items-center justify-center gap-3">
+              <a href="#streaming" onClick={() => setMobileMenuOpen(false)} className="flex items-center justify-center gap-2 bg-[#5416B4]/30 px-6 py-3 rounded-full border border-[#5416B4] w-max hover:bg-accent/20 transition-colors">
+                <span className="relative flex h-3 w-3">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+                </span>
+                <span className="text-sm font-bold text-white tracking-wider">
+                  EN VIVO
+                </span>
+              </a>
+              <button 
+                onClick={() => setIsMuted(!isMuted)}
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-[#5416B4]/30 border border-[#5416B4] hover:bg-accent/20 transition-all group focus:outline-none"
+              >
+                {isMuted ? (
+                  <VolumeX className="w-5 h-5 text-white group-hover:text-accent transition-colors" />
+                ) : (
+                  <Volume2 className="w-5 h-5 text-white group-hover:text-accent transition-colors" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
       )}
