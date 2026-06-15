@@ -20,7 +20,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
         isScrolled
-          ? "bg-white/80 backdrop-blur-md border-slate-200 shadow-sm"
+          ? "bg-[#1A0B2E]/90 backdrop-blur-md border-[#5416B4]/30 shadow-lg shadow-[#5416B4]/10"
           : "bg-transparent border-transparent"
       }`}
     >
@@ -36,10 +36,10 @@ export default function Navbar() {
               className="object-contain"
             />
             <div className="flex flex-col">
-              <span className="font-bold text-xl tracking-tight text-slate-900 leading-tight">
+              <span className="font-bold text-xl tracking-tight text-white leading-tight">
                 Zaachila Radio
               </span>
-              <span className="text-xs font-semibold text-accent tracking-widest">
+              <span className="text-xs font-semibold text-accent tracking-widest drop-shadow-md">
                 96.3 FM
               </span>
             </div>
@@ -47,23 +47,20 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#inicio" className="text-sm font-medium text-slate-600 hover:text-accent transition-colors">
+            <a href="#inicio" className="text-sm font-medium text-slate-300 hover:text-accent hover:drop-shadow-[0_0_8px_rgba(68,226,93,0.8)] transition-all">
               Inicio
             </a>
-            <a href="#programacion" className="text-sm font-medium text-slate-600 hover:text-accent transition-colors">
-              Programación
-            </a>
-            <a href="#contacto" className="text-sm font-medium text-slate-600 hover:text-accent transition-colors">
+            <a href="#contacto" className="text-sm font-medium text-slate-300 hover:text-accent hover:drop-shadow-[0_0_8px_rgba(68,226,93,0.8)] transition-all">
               Contacto
             </a>
             
             {/* Live Indicator */}
-            <div className="flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full border border-slate-200">
+            <div className="flex items-center gap-2 bg-[#5416B4]/30 px-4 py-2 rounded-full border border-[#5416B4]">
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
               </span>
-              <span className="text-xs font-bold text-slate-900 tracking-wider">EN VIVO</span>
+              <span className="text-xs font-bold text-white tracking-wider drop-shadow-md">EN VIVO</span>
             </div>
           </div>
 
@@ -71,7 +68,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-slate-600 hover:text-slate-900 focus:outline-none"
+              className="text-slate-300 hover:text-white focus:outline-none"
             >
               {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -81,35 +78,28 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-slate-200 shadow-lg absolute w-full">
+        <div className="md:hidden bg-[#1A0B2E] border-b border-[#5416B4]/30 shadow-lg shadow-[#5416B4]/20 absolute w-full">
           <div className="px-4 pt-2 pb-6 space-y-2 flex flex-col items-center">
             <a 
               href="#inicio" 
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50 w-full text-center rounded-lg"
+              className="block px-3 py-3 text-base font-medium text-white hover:bg-[#5416B4]/30 w-full text-center rounded-lg"
             >
               Inicio
             </a>
             <a 
-              href="#programacion" 
-              onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50 w-full text-center rounded-lg"
-            >
-              Programación
-            </a>
-            <a 
               href="#contacto" 
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50 w-full text-center rounded-lg"
+              className="block px-3 py-3 text-base font-medium text-white hover:bg-[#5416B4]/30 w-full text-center rounded-lg"
             >
               Contacto
             </a>
-            <div className="mt-4 flex items-center justify-center gap-2 bg-slate-100 px-6 py-3 rounded-full border border-slate-200 w-max">
+            <div className="mt-4 flex items-center justify-center gap-2 bg-[#5416B4]/30 px-6 py-3 rounded-full border border-[#5416B4] w-max">
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
               </span>
-              <span className="text-sm font-bold text-slate-900 tracking-wider">EN VIVO</span>
+              <span className="text-sm font-bold text-white tracking-wider">EN VIVO</span>
             </div>
           </div>
         </div>

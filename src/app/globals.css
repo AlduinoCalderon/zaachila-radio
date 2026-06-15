@@ -3,15 +3,21 @@
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   
-  --color-accent: #44E25D;
-  --color-accent-hover: #3bc751;
-  --color-slate-50: #f8fafc;
-  --color-slate-900: #1e293b;
+  /* Eva 01 Palette */
+  --color-eva-bg: #1A0B2E;
+  --color-eva-purple: #5416B4;
+  --color-eva-purple-light: #6357E2;
+  --color-eva-green: #44E25D;
+  --color-eva-green-hover: #3bc751;
+  --color-eva-orange: #FF7B00;
+  
+  --color-accent: var(--color-eva-green);
+  --color-accent-hover: var(--color-eva-green-hover);
 }
 
 :root {
-  --background: #f8fafc;
-  --foreground: #1e293b;
+  --background: var(--color-eva-bg);
+  --foreground: #f8fafc;
 }
 
 body {
@@ -26,5 +32,10 @@ body {
   margin: 0 auto;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(68, 226, 93, 0.15), 0 8px 10px -6px rgba(68, 226, 93, 0.1);
+}
+
+/* Hide fallback links for caster fm */
+.cstrEmbed > a {
+  display: none !important;
 }
