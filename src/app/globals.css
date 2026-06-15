@@ -43,7 +43,7 @@ body {
 .cstrEmbed iframe {
   position: absolute !important;
   right: -5px !important; /* Volvemos al ajuste original a la derecha */
-  bottom: -21px !important; /* Movemos el iframe más abajo para centrar los controles en los 40px */
+  bottom: -17px !important; /* Movemos el iframe 4px más ARRIBA para distribuir el aire de abajo */
   width: 600px !important; /* Force wide width so left-side elements overflow and hide */
   height: 300px !important; /* Force tall height so top elements overflow and hide */
   max-width: none !important;
