@@ -4,7 +4,7 @@ import AnimatedBackground from "./AnimatedBackground";
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-[#1A0B2E]">
+    <section id="inicio" className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-[#1A0B2E]">
       <AnimatedBackground />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">

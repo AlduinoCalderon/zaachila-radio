@@ -29,10 +29,12 @@ body {
 .cstrEmbed {
   width: 100%;
   max-width: 600px;
+  height: 64px; /* Forces exactly the height of the player bar */
   margin: 0 auto;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 10px 25px -5px rgba(68, 226, 93, 0.15), 0 8px 10px -6px rgba(68, 226, 93, 0.1);
+  background: white; /* Fallback for transparency issues */
 }
 
 /* Hide fallback links for caster fm */
