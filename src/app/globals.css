@@ -28,13 +28,20 @@ body {
 /* Custom styles for the caster.fm widget to fit nicely */
 .cstrEmbed {
   width: 100%;
-  max-width: 600px;
-  height: 64px; /* Forces exactly the height of the player bar */
+  max-width: 500px;
+  height: 52px !important; /* Force extremely compact height */
   margin: 0 auto;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 10px 25px -5px rgba(68, 226, 93, 0.15), 0 8px 10px -6px rgba(68, 226, 93, 0.1);
+  border-radius: 9999px !important; /* Pill shape */
+  overflow: hidden !important;
+  box-shadow: 0 10px 25px -5px rgba(68, 226, 93, 0.2), 0 8px 10px -6px rgba(68, 226, 93, 0.1);
   background: white; /* Fallback for transparency issues */
+  display: flex;
+  align-items: center;
+}
+
+/* Force inner iframe to fit perfectly without margins */
+.cstrEmbed iframe {
+  margin-top: -5px !important; /* Pull up to hide unwanted top padding if any */
 }
 
 /* Hide fallback links for caster fm */
