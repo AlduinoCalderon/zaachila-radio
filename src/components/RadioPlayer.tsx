@@ -30,7 +30,9 @@ export default function RadioPlayer() {
         data-color="44E25D" 
         data-channelId="" 
         data-rendered="false"
-      ></div>
+      >
+        <a href="https://www.caster.fm">Shoutcast Hosting</a> <a href="https://www.caster.fm">Stream Hosting</a> <a href="https://www.caster.fm">Radio Server Hosting</a>
+      </div>
     </div>
   );
 }

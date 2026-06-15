@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import ScheduleGrid from "@/components/ScheduleGrid";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -8,7 +7,6 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
       <Navbar />
       <Hero />
-      <ScheduleGrid />
       <Footer />
     </main>
   );
