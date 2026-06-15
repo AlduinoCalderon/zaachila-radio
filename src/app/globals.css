@@ -29,8 +29,8 @@ body {
 .cstrEmbed {
   position: relative;
   width: 100%;
-  max-width: 250px; /* Mas angosto */
-  height: 50px !important; /* Slightly more compact height */
+  max-width: 320px; /* De largo estaba bien */
+  height: 40px !important; /* Menos alto */
   margin: 0 auto;
   border-radius: 9999px !important; /* Pill shape */
   overflow: hidden !important;
@@ -42,8 +42,8 @@ body {
 /* Force iframe to be oversized and position the bottom-right controls in the visible window */
 .cstrEmbed iframe {
   position: absolute !important;
-  right: -2px !important; /* Ajuste a la derecha */
-  bottom: -18px !important; /* Ajuste hacia arriba visualmente (iframe moves down) */
+  right: -5px !important; /* Volvemos al ajuste original a la derecha */
+  bottom: -21px !important; /* Movemos el iframe más abajo para centrar los controles en los 40px */
   width: 600px !important; /* Force wide width so left-side elements overflow and hide */
   height: 300px !important; /* Force tall height so top elements overflow and hide */
   max-width: none !important;
