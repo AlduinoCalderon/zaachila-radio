@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zaachila Radio 96.3 FM - Web App
 
-## Getting Started
+Este proyecto es la Landing Page oficial y Single Page Application (SPA) para **Zaachila Radio 96.3 FM**, *"La voz del pueblo que despierta y se levanta"*.
 
-First, run the development server:
+Construido con **Next.js (App Router)** y **Tailwind CSS**, este rediseño sustituye la anterior arquitectura web con una propuesta moderna, de alto rendimiento y adaptada a la identidad comunitaria de la emisora, adoptando un diseño estilo "Evangelion Eva 01" con tonos oscuros (Dark Mode), morado intenso, detalles en verde brillante y animaciones dinámicas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Características Actuales
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Reproductor Caster.fm Personalizado**: Se implementó una solución avanzada de CSS para "recortar" y aislar exclusivamente los controles esenciales (Play/Pausa y Volumen) del iframe nativo de Caster.fm, logrando una píldora flotante ultra-minimalista, librándose de toda la marca y los enlaces externos que no son de interés para la radio.
+- **Diseño Responsivo (Mobile-First)**: La interfaz está diseñada para que todos los elementos encajen armónicamente en cualquier tamaño de pantalla. Con las recientes optimizaciones, la vista principal cabe en una sola pantalla sin necesidad de hacer scroll.
+- **Identidad Visual "Eva 01"**: Paleta oscura basada en `#1A0B2E` (fondo), `#5416B4` (acentos morados) y `#44E25D` (detalles en verde neón).
+- **Animaciones Integradas**: Fondo dinámico de partículas con emojis musicales y ondas de radio generados mediante React Hooks (`AnimatedBackground`).
+- **Navegación Eficiente**: Se eliminaron enlaces innecesarios ("Inicio") priorizando "EN VIVO" como el botón principal de llamada a la acción (CTA), llevando directamente a los controles de radio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Futuras Implementaciones Planeadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+El desarrollo de la plataforma se dividirá en fases. Las siguientes funcionalidades y secciones están documentadas para ser implementadas en las próximas versiones:
 
-## Learn More
+1. **Integración de Redes Sociales (Facebook)**:
+   - Añadir la sección "Publicaciones Recientes" en el layout usando iframes oficiales de la página de Facebook de Zaachila Radio para mostrar la actividad comunitaria en vivo y mantener el contenido web fresco sin necesidad de un CMS complejo.
 
-To learn more about Next.js, take a look at the following resources:
+2. **Tipografía Oficial de Zaachila Radio**:
+   - Transicionar de las fuentes web seguras actuales a las tipografías oficiales o institucionales que utiliza Zaachila Radio en sus medios impresos o branding original, garantizando coherencia de marca total.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Sección "Nuestra Historia"**:
+   - Crear un apartado en la página que documente la fundación y el trayecto histórico de la estación. 
+   - Objetivo: Mostrar la trayectoria de *la voz del pueblo* y fortalecer el sentido de identidad de la audiencia local con el proyecto.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Formulario de Contacto Funcional (Formspree)**:
+   - Integrar un formulario real de contacto para que los radioescuchas y patrocinadores puedan mandar mensajes directos a la cabina.
+   - **Esquema propuesto**:
+     ```html
+     <form action="https://formspree.io/f/mwpplwnk" method="POST">
+       <div class="mb-3">
+         <label for="name" class="form-label">Name</label>
+         <input type="text" class="form-control" id="name" name="name" required>
+       </div>
+       <div class="mb-3">
+         <label for="email" class="form-label">Email</label>
+         <input type="email" class="form-control" id="email" name="_replyto" required>
+       </div>
+       <div class="mb-3">
+         <label for="message" class="form-label">Message</label>
+         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+       </div>
+       <button type="submit" class="btn btn-outline-light"><i class="fas fa-envelope"></i> Send</button>
+     </form>
+     ```
 
-## Deploy on Vercel
+## Tecnologías Utilizadas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **React 18** & **Next.js**
+- **Tailwind CSS v4** (Estilizado mediante directivas `@theme`)
+- **Lucide React** (Iconografía vectorial moderna)
+- **Caster.fm** (Servicio de streaming y widget embebido)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Programado por Alduino Calderon 🐢*

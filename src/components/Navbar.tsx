@@ -47,15 +47,12 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#inicio" className="text-sm font-medium text-slate-300 hover:text-accent hover:drop-shadow-[0_0_8px_rgba(68,226,93,0.8)] transition-all">
-              Inicio
-            </a>
             <a href="#contacto" className="text-sm font-medium text-slate-300 hover:text-accent hover:drop-shadow-[0_0_8px_rgba(68,226,93,0.8)] transition-all">
               Contacto
             </a>
             
             {/* Live Indicator */}
-            <a href="#streaming" className="flex items-center gap-2 bg-[#5416B4]/30 px-4 py-2 rounded-full border border-[#5416B4] hover:bg-accent/20 transition-all group">
+            <a href="#inicio" className="flex items-center gap-2 bg-[#5416B4]/30 px-4 py-2 rounded-full border border-[#5416B4] hover:bg-accent/20 transition-all group">
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
@@ -82,22 +79,15 @@ export default function Navbar() {
       {/* Mobile Nav */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-[#1A0B2E] border-b border-[#5416B4]/30 shadow-lg shadow-[#5416B4]/20 absolute w-full">
-          <div className="px-4 pt-2 pb-6 space-y-2 flex flex-col items-center">
-            <a 
-              href="#inicio" 
-              onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-3 text-base font-medium text-white hover:bg-[#5416B4]/30 w-full text-center rounded-lg"
-            >
-              Inicio
-            </a>
+          <div className="flex flex-col pt-4 pb-6 space-y-4 items-center">
             <a 
               href="#contacto" 
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-3 text-base font-medium text-white hover:bg-[#5416B4]/30 w-full text-center rounded-lg"
+              className="px-4 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors w-full text-center"
             >
               Contacto
             </a>
-            <a href="#streaming" onClick={() => setMobileMenuOpen(false)} className="mt-4 flex items-center justify-center gap-2 bg-[#5416B4]/30 px-6 py-3 rounded-full border border-[#5416B4] w-max hover:bg-accent/20 transition-colors">
+            <a href="#inicio" onClick={() => setMobileMenuOpen(false)} className="mt-4 flex items-center justify-center gap-2 bg-[#5416B4]/30 px-6 py-3 rounded-full border border-[#5416B4] w-max hover:bg-accent/20 transition-colors">
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>

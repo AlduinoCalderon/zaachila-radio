@@ -4,7 +4,7 @@ import AnimatedBackground from "./AnimatedBackground";
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-[#1A0B2E]">
+    <section id="inicio" className="relative pt-20 pb-8 md:pt-24 md:pb-12 overflow-hidden bg-[#1A0B2E]">
       <AnimatedBackground />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -20,12 +20,12 @@ export default function Hero() {
           </span>
         </h1>
         
-        <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-300 mb-12 drop-shadow-md font-medium">
+        <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-300 mb-8 drop-shadow-md font-medium">
           Conéctate con tu comunidad, escucha nuestra programación en vivo y mantente informado con la mejor música, noticias y cultura.
         </p>
 
         {/* Player Container */}
-        <div className="max-w-3xl mx-auto mt-8">
+        <div className="max-w-3xl mx-auto mt-6">
           <RadioPlayer />
         </div>
       </div>
