@@ -42,8 +42,8 @@ body {
 /* Force iframe to be oversized and position the bottom-right controls in the visible window */
 .cstrEmbed iframe {
   position: absolute !important;
-  right: -5px !important; /* Volvemos al ajuste original a la derecha */
-  bottom: -17px !important; /* Movemos el iframe 4px más ARRIBA para distribuir el aire de abajo */
+  right: -10px !important; /* Movemos el iframe más a la derecha para pegar el botón al borde */
+  bottom: -26px !important; /* Movemos el iframe hacia ABAJO (más negativo) para centrar el botón */
   width: 600px !important; /* Force wide width so left-side elements overflow and hide */
   height: 300px !important; /* Force tall height so top elements overflow and hide */
   max-width: none !important;
