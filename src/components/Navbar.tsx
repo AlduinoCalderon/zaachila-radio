@@ -50,6 +50,9 @@ export default function Navbar() {
             <a href="#inicio" className="text-sm font-medium text-slate-600 hover:text-accent transition-colors">
               Inicio
             </a>
+            <a href="#programacion" className="text-sm font-medium text-slate-600 hover:text-accent transition-colors">
+              Programación
+            </a>
             <a href="#contacto" className="text-sm font-medium text-slate-600 hover:text-accent transition-colors">
               Contacto
             </a>
@@ -86,6 +89,13 @@ export default function Navbar() {
               className="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50 w-full text-center rounded-lg"
             >
               Inicio
+            </a>
+            <a 
+              href="#programacion" 
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50 w-full text-center rounded-lg"
+            >
+              Programación
             </a>
             <a 
               href="#contacto" 

@@ -104,6 +104,7 @@ export default function Footer() {
             <h4 className="text-white font-bold text-lg mb-6">Enlaces Rápidos</h4>
             <ul className="space-y-3">
               <li><a href="#inicio" className="text-slate-400 hover:text-accent transition-colors text-sm">Inicio</a></li>
+              <li><a href="#programacion" className="text-slate-400 hover:text-accent transition-colors text-sm">Parrilla de Programación</a></li>
               <li><a href="#contacto" className="text-slate-400 hover:text-accent transition-colors text-sm">Contáctanos</a></li>
             </ul>
           </div>

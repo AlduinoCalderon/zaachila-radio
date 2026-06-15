@@ -27,11 +27,13 @@ export default function RadioPlayer() {
         data-type="newStreamPlayer" 
         data-publicToken="3bab21b3-1b78-44d6-9006-748559cbfa43" 
         data-theme="light" 
-        data-color="44E25D" 
+        data-color="6357E2" 
         data-channelId="" 
         data-rendered="false"
       >
-        <a href="https://www.caster.fm">Shoutcast Hosting</a> <a href="https://www.caster.fm">Stream Hosting</a> <a href="https://www.caster.fm">Radio Server Hosting</a>
+        <a href="https://www.caster.fm">Shoutcast Hosting</a> 
+        <a href="https://www.caster.fm">Stream Hosting</a> 
+        <a href="https://www.caster.fm">Radio Server Hosting</a>
       </div>
     </div>
   );
