@@ -26,24 +26,16 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo Area */}
-          <div className="flex items-center gap-3">
+          {/* Logo */}
+          <a href="#" className="relative flex items-center group w-[65vw] sm:w-[70vw] md:w-72 lg:w-80 h-10 md:h-14 shrink-0">
             <Image
-              src="/zaachila-radio-lg.png"
+              src="/imagen-zaachila-radio-lg.png"
               alt="Zaachila Radio Logo"
-              width={48}
-              height={48}
-              className="object-contain"
+              fill
+              priority
+              className="object-contain object-left"
             />
-            <div className="flex flex-col">
-              <span className="font-bold text-xl tracking-tight text-white leading-tight">
-                Zaachila Radio
-              </span>
-              <span className="text-xs font-semibold text-accent tracking-widest drop-shadow-md">
-                96.3 FM
-              </span>
-            </div>
-          </div>
+          </a>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">

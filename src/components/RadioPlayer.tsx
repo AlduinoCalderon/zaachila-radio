@@ -21,9 +21,9 @@ export default function RadioPlayer() {
   }, []);
 
   return (
-    <div id="streaming" className="w-full flex justify-center py-4 relative z-10">
+    <div id="streaming" className="w-full flex justify-center py-4 relative z-10 pointer-events-auto">
       <div 
-        className="cstrEmbed bg-white/50 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-white/40 ring-1 ring-black/5" 
+        className="cstrEmbed" 
         data-type="newStreamPlayer" 
         data-publicToken="3bab21b3-1b78-44d6-9006-748559cbfa43" 
         data-theme="light" 

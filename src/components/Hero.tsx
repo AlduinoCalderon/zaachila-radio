@@ -13,15 +13,12 @@ export default function Hero() {
           <span className="text-xs font-semibold text-white tracking-wide uppercase">Transmitiendo desde Zaachila, Oaxaca</span>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight drop-shadow-2xl">
-          La voz del pueblo que <br className="hidden md:block" />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#44E25D] via-[#75FF45] to-[#FF7B00]">
-            despierta y se levanta
-          </span>
+        <h1 className="text-2xl md:text-4xl font-extrabold text-accent tracking-tight mb-6 leading-tight drop-shadow-lg">
+          La voz del pueblo que despierta y se levanta
         </h1>
         
-        <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-300 mb-8 drop-shadow-md font-medium">
-          Conéctate con tu comunidad, escucha nuestra programación en vivo y mantente informado con la mejor música, noticias y cultura.
+        <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-300 mb-8 drop-shadow-md font-medium whitespace-pre-line">
+          Escucha nuestros diversos programas: musicales, informativos y culturales.{"\n"}¡Conéctate con la comunidad!
         </p>
 
         {/* Player Container */}

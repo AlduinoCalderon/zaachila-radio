@@ -37,17 +37,20 @@ body {
   box-shadow: 0 10px 25px -5px rgba(68, 226, 93, 0.2), 0 8px 10px -6px rgba(68, 226, 93, 0.1);
   background: white;
   display: block !important;
+  pointer-events: auto !important; /* Fix for volume slider */
 }
 
 /* Force iframe to be oversized and position the bottom-right controls in the visible window */
 .cstrEmbed iframe {
   position: absolute !important;
-  right: -10px !important; /* Movemos el iframe más a la derecha para pegar el botón al borde */
+  right: -5px !important; /* Move right slightly to ensure the slider knob is clickable */
   bottom: -26px !important; /* Movemos el iframe hacia ABAJO (más negativo) para centrar el botón */
   width: 600px !important; /* Force wide width so left-side elements overflow and hide */
   height: 300px !important; /* Force tall height so top elements overflow and hide */
   max-width: none !important;
   margin: 0 !important;
+  z-index: 50 !important;
+  pointer-events: auto !important; /* Ensure interactions are captured */
 }
 
 /* Hide fallback links for caster fm */
