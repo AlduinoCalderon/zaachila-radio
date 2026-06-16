@@ -11,17 +11,14 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="relative w-72 md:w-80 h-20 md:h-24 mb-4">
+            <div className="relative w-72 md:w-80 h-20 md:h-24">
               <Image
-                src="/imagen-zaachila-radio-lg.webp"
+                src="/logo-horizontal-slogan.webp"
                 alt="Zaachila Radio Logo"
                 fill
                 className="object-contain object-center md:object-left"
               />
             </div>
-            <p className="text-slate-400 text-sm font-medium leading-relaxed italic">
-              "La voz del pueblo que despierta y se levanta"
-            </p>
           </div>
 
           {/* Contact / Social Details */}
