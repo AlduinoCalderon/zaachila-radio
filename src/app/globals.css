@@ -32,7 +32,7 @@ body {
   max-width: 125px; /* Recorte ajustado para centrar X */
   height: 40px !important; /* Menos alto */
   margin: 0 auto;
-  border-radius: 9999px !important; /* Píldora perfecta de nuevo */
+  border-radius: 12px !important; /* Curvatura más suave para empatar con el botón interno */
   overflow: hidden !important;
   box-shadow: 0 10px 25px -5px rgba(68, 226, 93, 0.2), 0 8px 10px -6px rgba(68, 226, 93, 0.1);
   background: white;
