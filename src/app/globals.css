@@ -29,7 +29,7 @@ body {
 .cstrEmbed {
   position: relative;
   width: 100%;
-  max-width: 121px;
+  max-width: 117px;
   /* Recorte ajustado para centrar X */
   height: 34px !important;
   /* Menos alto */
