@@ -29,10 +29,10 @@ body {
 .cstrEmbed {
   position: relative;
   width: 100%;
-  max-width: 320px; /* De largo estaba bien */
+  max-width: 130px; /* Recorte radical para dejar solo el botón PLAY */
   height: 40px !important; /* Menos alto */
   margin: 0 auto;
-  border-radius: 12px !important; /* Menos curvatura para no cortar el área táctil del deslizador */
+  border-radius: 9999px !important; /* Píldora perfecta de nuevo */
   overflow: hidden !important;
   box-shadow: 0 10px 25px -5px rgba(68, 226, 93, 0.2), 0 8px 10px -6px rgba(68, 226, 93, 0.1);
   background: white;
