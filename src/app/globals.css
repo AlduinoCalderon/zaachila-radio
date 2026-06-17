@@ -29,7 +29,7 @@ body {
 .cstrEmbed {
   position: relative;
   width: 100%;
-  max-width: 130px; /* Recorte radical para dejar solo el botón PLAY */
+  max-width: 125px; /* Recorte ajustado para centrar X */
   height: 40px !important; /* Menos alto */
   margin: 0 auto;
   border-radius: 9999px !important; /* Píldora perfecta de nuevo */
@@ -43,8 +43,8 @@ body {
 /* Force iframe to be oversized and position the bottom-right controls in the visible window */
 .cstrEmbed iframe {
   position: absolute !important;
-  right: 0px !important; /* Alineado exacto a la derecha para no esconder el deslizador */
-  bottom: -26px !important; /* Movemos el iframe hacia ABAJO (más negativo) para centrar el botón */
+  right: -14px !important; /* Movemos el iframe a la derecha para quitar el aire blanco derecho y dar espacio a la izquierda */
+  bottom: -24px !important; /* Movemos el iframe hacia ABAJO (menos negativo) para centrar en Y */
   width: 600px !important; /* Force wide width so left-side elements overflow and hide */
   height: 300px !important; /* Force tall height so top elements overflow and hide */
   max-width: none !important;
