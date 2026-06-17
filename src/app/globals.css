@@ -2,7 +2,7 @@
 
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  
+
   /* Eva 01 Palette */
   --color-eva-bg: #1A0B2E;
   --color-eva-purple: #5416B4;
@@ -10,7 +10,7 @@
   --color-eva-green: #44E25D;
   --color-eva-green-hover: #3bc751;
   --color-eva-orange: #FF7B00;
-  
+
   --color-accent: var(--color-eva-green);
   --color-accent-hover: var(--color-eva-green-hover);
 }
@@ -29,31 +29,40 @@ body {
 .cstrEmbed {
   position: relative;
   width: 100%;
-  max-width: 125px; /* Recorte ajustado para centrar X */
-  height: 40px !important; /* Menos alto */
+  max-width: 121px;
+  /* Recorte ajustado para centrar X */
+  height: 34px !important;
+  /* Menos alto */
   margin: 0 auto;
-  border-radius: 12px !important; /* Curvatura más suave para empatar con el botón interno */
+  border-radius: 8px !important;
+  /* Curvatura más suave para empatar con el botón interno */
   overflow: hidden !important;
   box-shadow: 0 10px 25px -5px rgba(68, 226, 93, 0.2), 0 8px 10px -6px rgba(68, 226, 93, 0.1);
   background: white;
   display: block !important;
-  pointer-events: auto !important; /* Fix for volume slider */
+  pointer-events: auto !important;
+  /* Fix for volume slider */
 }
 
 /* Force iframe to be oversized and position the bottom-right controls in the visible window */
 .cstrEmbed iframe {
   position: absolute !important;
-  right: -14px !important; /* Movemos el iframe a la derecha para quitar el aire blanco derecho y dar espacio a la izquierda */
-  bottom: -24px !important; /* Movemos el iframe hacia ABAJO (menos negativo) para centrar en Y */
-  width: 600px !important; /* Force wide width so left-side elements overflow and hide */
-  height: 300px !important; /* Force tall height so top elements overflow and hide */
+  right: -20px !important;
+  /* Movemos el iframe a la derecha para quitar el aire blanco derecho y dar espacio a la izquierda */
+  bottom: -28px !important;
+  /* Movemos el iframe hacia ABAJO (menos negativo) para centrar en Y */
+  width: 600px !important;
+  /* Force wide width so left-side elements overflow and hide */
+  height: 300px !important;
+  /* Force tall height so top elements overflow and hide */
   max-width: none !important;
   margin: 0 !important;
   z-index: 50 !important;
-  pointer-events: auto !important; /* Ensure interactions are captured */
+  pointer-events: auto !important;
+  /* Ensure interactions are captured */
 }
 
 /* Hide fallback links for caster fm */
-.cstrEmbed > a {
+.cstrEmbed>a {
   display: none !important;
 }
