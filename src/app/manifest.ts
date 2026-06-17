@@ -11,7 +11,7 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: '#1A0B2E',
     icons: [
       {
-        src: '/logo-cuadrado.webp',
+        src: '/logo-morado.webp',
         sizes: '192x192 512x512',
         type: 'image/webp',
         purpose: 'maskable'
