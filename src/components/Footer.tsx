@@ -44,8 +44,8 @@ export default function Footer() {
             <p className="text-sm text-slate-500">
               © {new Date().getFullYear()} Zaachila Radio 96.3 FM. Todos los derechos reservados.
             </p>
-            <p className="text-sm text-slate-400 font-medium tracking-wide">
-              Programado por Alduino Calderon 🐢
+            <p className="text-xs text-slate-500/50 font-medium">
+              Dirección de Tecnologías
             </p>
           </div>
           <div className="flex gap-4 text-sm text-slate-500">
